@@ -1,0 +1,89 @@
+name: flutter_store_catalog
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# ให้ปรับ version ที่นี่
+# 1.0.0+1 หมายถึง versionName+versionCode
+version: 1.1.1+38
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  ## standard dependencies
+  flutter_bloc: ^4.0.1
+  flutter_phoenix: ^1.0.0
+  catcher: ^0.4.2
+  easy_localization: ^2.3.3+1
+  csv: ^4.1.0
+  dio: ^3.0.10
+  logger: ^1.0.0
+  get_it: ^5.0.6
+  string_validator: ^0.3.0
+  equatable: ^1.1.1
+  responsive_framework: ^0.1.0
+  url_strategy: ^0.2.0
+  shared_preferences: ^0.5.12+4
+  loader_overlay: ^1.2.0
+  flutter_colored_progress_indicators: ^1.2.0
+  material_design_icons_flutter: ^4.0.5955
+  decimal: ^1.1.0
+  package_info_plus: ^0.6.4
+
+  ## project dependencies
+  badges: ^1.2.0
+  flutter_staggered_grid_view: ^0.4.0
+  sticky_headers: ^0.2.0
+  bubble_tab_indicator: ^0.1.6
+  flutter_typeahead: ^1.9.3
+  scroll_to_index: ^1.0.6
+  container_tab_indicator: ^0.2.0
+  flutter_xlider: ^3.4.0
+  flutter_pagewise: ^1.2.3
+  flutter_sticky_header: ^0.5.0
+  table_calendar: ^3.0.0
+  top_snackbar_flutter: ^0.0.3
+  flutter_widget_from_html: ^0.5.2+1
+  flutter_countdown_timer: ^4.1.0
+  horizontal_data_table: ^2.5.2
+  flutter_google_maps: ^4.0.0
+  pointer_interceptor: ^0.8.0+2
+  geolocator: ^6.2.1
+  photo_view: ^0.11.1
+  flutter_switch: ^0.3.1
+  uuid: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  fonts:
+    - family: Prompt
+      fonts:
+        - asset: assets/fonts/prompt/Prompt-Regular.ttf
+        - asset: assets/fonts/prompt/Prompt-Italic.ttf
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-Bold.ttf
+          weight: 500
+    - family: NovaLineIcon
+      fonts:
+        - asset: assets/fonts/nova/NovaLineIcon.ttf
+    - family: NovaSolidIcon
+      fonts:
+        - asset: assets/fonts/nova/NovaSolidIcon.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto/Roboto-Regular.ttf
+
+  assets:
+    - assets/images/
+    - assets/images/en/
+    - assets/images/th/
+    - assets/langs/
