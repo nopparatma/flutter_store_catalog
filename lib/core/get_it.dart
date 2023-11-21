@@ -1,0 +1,51 @@
+import 'package:flutter_store_catalog/core/services/bkoffc/master_service.dart';
+import 'package:flutter_store_catalog/core/services/bkoffc/stock_service.dart';
+import 'package:flutter_store_catalog/core/services/bkoffc/tms_service.dart';
+import 'package:flutter_store_catalog/core/services/common/sms_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/calculator_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/customer_information_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/privacy_policy_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/qr_payment_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/schematic_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/transaction_service.dart';
+import 'package:flutter_store_catalog/core/services/ecat/master_service.dart' as ecat;
+import 'package:flutter_store_catalog/core/services/salesprmtn/hire_purchase_service.dart';
+import 'package:flutter_store_catalog/core/services/salesprmtn/promotion_service.dart';
+import 'package:flutter_store_catalog/core/services/sson/master_service.dart' as sson;
+import 'package:flutter_store_catalog/core/services/bkoffc/promotion_bkoffc_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/article_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/checklist_information_service.dart';
+import 'package:flutter_store_catalog/core/services/dotnet/product_knowledge_service.dart';
+import 'package:flutter_store_catalog/core/services/ecat/category_service.dart';
+import 'package:flutter_store_catalog/core/services/bkoffc/customer_service.dart';
+import 'package:flutter_store_catalog/core/services/bkoffc/sales_order_service.dart';
+import 'package:get_it/get_it.dart';
+
+final getIt = GetIt.instance;
+
+void setupGetIt() {
+  // GetIt.instance.registerLazySingleton(() => AirwatchService());
+  // GetIt.instance.registerLazySingleton(() => AuthorizationService());
+  GetIt.instance.registerLazySingleton(() => MasterService());
+  GetIt.instance.registerLazySingleton(() => SaleOrderService());
+  GetIt.instance.registerLazySingleton(() => CustomerService());
+  GetIt.instance.registerLazySingleton(() => StockService());
+  GetIt.instance.registerLazySingleton(() => PromotionBkoffcService());
+  GetIt.instance.registerLazySingleton(() => HirePurchaseService());
+  GetIt.instance.registerLazySingleton(() => SMSService());
+  GetIt.instance.registerLazySingleton(() => sson.MasterService());
+  GetIt.instance.registerLazySingleton(() => CategoryService());
+  GetIt.instance.registerLazySingleton(() => ArticleService());
+  GetIt.instance.registerLazySingleton(() => ProductKnowledgeService());
+  GetIt.instance.registerLazySingleton(() => PromotionService());
+  GetIt.instance.registerLazySingleton(() => CheckListInformationService());
+  GetIt.instance.registerLazySingleton(() => CalculatorService());
+  GetIt.instance.registerLazySingleton(() => TransactionService());
+  GetIt.instance.registerLazySingleton(() => TMSService());
+  GetIt.instance.registerLazySingleton(() => QRPaymentService());
+  GetIt.instance.registerLazySingleton(() => PrivacyPolicyService());
+  GetIt.instance.registerLazySingleton(() => ClmService());
+  GetIt.instance.registerLazySingleton(() => CustomerInformationService());
+  GetIt.instance.registerLazySingleton(() => ecat.MasterService());
+  GetIt.instance.registerLazySingleton(() => SchematicService());
+}
